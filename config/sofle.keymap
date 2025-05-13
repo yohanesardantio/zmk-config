@@ -16,6 +16,21 @@
 #define ADJUST 3
 
 / {
+    extra_1 {
+        status = "reserved";
+    };
+    extra_2 {
+        status = "reserved";
+    };
+    extra_3 {
+        status = "reserved";
+    };
+    extra_4 {
+        status = "reserved";
+    };
+};
+
+/ {
 
    // Activate ADJUST layer by pressing raise and lower
     conditional_layers {
@@ -25,19 +40,6 @@
             then-layer = <ADJUST>;
         };
     };
-
-extra_1 {
-      status = "reserved";
-   };
-   extra_2 {
-      status = "reserved";
-   };
-   extra_3 {
-      status = "reserved";
-   };
-   extra_4 {
-      status = "reserved";
-   };
 
     keymap {
         compatible = "zmk,keymap";
