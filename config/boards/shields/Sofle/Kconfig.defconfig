@@ -8,12 +8,6 @@ config ZMK_KEYBOARD_NAME
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
-    
-config ZMK_BLE_EXPERIMENTAL_FEATURES
-    default y
-
-config BT_CTLR_TX_PWR_PLUS_8
-    default y
 
 endif
 
