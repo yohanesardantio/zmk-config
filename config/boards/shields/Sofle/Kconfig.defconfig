@@ -2,23 +2,23 @@
 # SPDX-License-Identifier: MIT
 
 if SHIELD_SOFLE_LEFT
-
+   
 config ZMK_KEYBOARD_NAME
     default "Sofle"
 
 config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+    
+config ZMK_BLE_EXPERIMENTAL_FEATURES
+    default y
+
+config BT_CTLR_TX_PWR_PLUS_8
     default y
 
 endif
 
 if SHIELD_SOFLE_LEFT || SHIELD_SOFLE_RIGHT
 
-config ZMK_BLE_EXPERIMENTAL_FEATURES
-    default y
-
-config BT_CTLR_TX_PWR_PLUS_8
-    default y
-    
 config ZMK_SPLIT
     default y
 
