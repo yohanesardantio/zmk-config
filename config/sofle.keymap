@@ -16,7 +16,6 @@
 #define ADJUST 3
 
 
-&led_strip { chain-length = <7>; };
 
 / {
     extra_1 {
@@ -33,10 +32,6 @@
     };
 };
 
-/ {
-    chosen {
-		zmk,underglow = &led_strip;
-	};
 
 / {
 
