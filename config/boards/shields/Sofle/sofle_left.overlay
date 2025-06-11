@@ -20,30 +20,3 @@
 &left_encoder {
     status = "okay";
 };
-
-/{
-    chosen {
-        zmk,underglow = &underglow;
-    };
-};
-
-&spi1 {
-    status = "okay";
-
-    underglow: ws2812@0 {
-        compatible = "worldsemi,ws2812-spi";
-        reg = <0>;
-        label = "WS2812";
-        spi-max-frequency = <4000000>;
-        chain-length = <7>;     // Jumlah LED strip
-        rgbw = <false>;
-    };
-};
-
-&gpio0 {
-    status = "okay";
-};
-
-&spi1 {
-    cs-gpios = <&gpio0 15 GPIO_ACTIVE_LOW>; // P0.15 sebagai chip select (data)
-};
