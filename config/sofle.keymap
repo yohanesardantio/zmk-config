@@ -15,20 +15,10 @@
 #define RAISE 2
 #define ADJUST 3
 
-/ {
-    extra_1 {
-        status = "reserved";
-    };
-    extra_2 {
-        status = "reserved";
-    };
-    extra_3 {
-        status = "reserved";
-    };
-    extra_4 {
-        status = "reserved";
-    };
+&led_strip {
+    chain-length = <6>;
 };
+
 
 / {
 
@@ -118,6 +108,19 @@
                                   &none           &none           &none           &none            &none           &none  &none &none &none &none
             >;
         };
+
+        extra_1 {
+        status = "reserved";
+    };
+    extra_2 {
+        status = "reserved";
+    };
+    extra_3 {
+        status = "reserved";
+    };
+    extra_4 {
+        status = "reserved";
+    };
 
     };
 };
