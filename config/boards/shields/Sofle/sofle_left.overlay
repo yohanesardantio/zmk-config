@@ -29,6 +29,6 @@
         reg = <0>;
         label = "WS2812";
         spi-max-frequency = <8000000>;
-        spi-one-frame;
+        spi-one-frame = <1>;
     };
 };
